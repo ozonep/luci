@@ -240,9 +240,7 @@
 	<link rel="stylesheet" href="<%=media%>/css/cascade.css?v=<%=math.random(1,100000)%>">
 	<style title="text/css">
 	<% if mode == 'normal' then %>
-		@media (prefers-color-scheme: dark) {
-			<%=dark_css%>
-		}
+		<%=dark_css%>
 	<% elseif mode == 'dark' then %>
 		<%=dark_css%>
 	<% end -%>
