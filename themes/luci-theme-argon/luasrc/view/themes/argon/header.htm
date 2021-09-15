@@ -238,23 +238,7 @@
 	<meta name="msapplication-TileImage" content="<%=media%>/icon/ms-icon-144x144.png">
 	<meta name="theme-color" content="<%=bar_color%>">
 	<link rel="stylesheet" href="<%=media%>/css/cascade.css?v=<%=math.random(1,100000)%>">
-	<style title="text/css">
-	<% if mode == 'normal' then %>
-		<%=dark_css%>
-	<% elseif mode == 'dark' then %>
-		<%=dark_css%>
-	<% end -%>
-	<% if fs.access('/etc/config/argon') then %>
-	:root {
-		--primary: <%=primary%>;
-		--dark-primary: <%=dark_primary%>;
-		--blur-radius:<%=blur_radius%>px;
-		--blur-opacity:<%=blur_opacity%>;
-		--blur-radius-dark:<%=blur_radius_dark%>px;
-		--blur-opacity-dark:<%=blur_opacity_dark%>;
-	}
-	<% end -%>
-	</style>
+	<link rel="stylesheet" href="<%=media%>/css/dark.css?v=<%=math.random(1,100000)%>">
 	<link rel="shortcut icon" href="<%=media%>/favicon.ico">
 	<% if node and node.css then %>
 	<link rel="stylesheet" href="<%=resource%>/<%=node.css%>">
