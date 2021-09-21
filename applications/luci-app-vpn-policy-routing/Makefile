@@ -9,7 +9,7 @@ PKG_VERSION:=0.3.4-8
 
 LUCI_TITLE:=VPN Policy-Based Routing Service Web UI
 LUCI_DESCRIPTION:=Provides Web UI for vpn-policy-routing service.
-LUCI_DEPENDS:=+luci-compat +luci-mod-admin-full +vpn-policy-routing
+LUCI_DEPENDS:=+luci-mod-admin-full +vpn-policy-routing
 LUCI_PKGARCH:=all
 
 include ../../luci.mk
